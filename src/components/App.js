@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
 import {Register} from './Register';
+import {Login} from './Login';
+import Dashboard from './Dashboard';
 import { AuthProvider } from '../Context/AuthContext';
 import { Container } from 'react-bootstrap';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 
 function App() {
@@ -14,9 +17,14 @@ function App() {
       
       <div className="w-100" style={ {maxWidth: "400px"} }>
         <Router>
-          
+          <AuthProvider>
+              <Routes>
+                <Route exact path="/" element = {<Dashboard/>} />
+                <Route path="/signup" element = {<Register/>} />
+                <Route path="/login" element = {<Login/>} />
+              </Routes>
+            </AuthProvider>
         </Router>
-        <Register/>
       </div>
 
         
