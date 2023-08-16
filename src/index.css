@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root{
-  /* --black: #0E0E0E;
-  --blue: #0DE0FD;
-  --white: #D9D9D9; */
+  --black: #0E0E0E;
+  --blue: #60C1C8;
+  --white: #fff;
 }
 
 *{
@@ -14,7 +16,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--white);
 }
 
 h1{
@@ -23,7 +25,8 @@ h1{
 }
 
 h2{
-  font-size: 4rem;
+  font-size: 3rem;
+  font-display: t;
   font-weight: 700;
   text-align: center;
 }

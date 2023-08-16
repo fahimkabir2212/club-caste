@@ -44,26 +44,26 @@ async function handleSubmit(e){
             <div className='login-form'>
                 <Card>
                     <Card.Body>
-                        <h2 id='email' className="text-center mb-4">Sign Up</h2>
+                        <h2 className="mb-4">Signup</h2>
                         {error && <Alert variant='danger'> {error} </Alert>}
                         <form onSubmit={handleSubmit}>
                             <Form.Group className='mt-3'>
-                                <Form.Label>Email</Form.Label>
+                                <Form.Label className='form-label'>Email</Form.Label>
                                 <Form.Control type='email' ref={emailRef} required />
                             </Form.Group>
                             <Form.Group id='password' className='mt-3'>
-                                <Form.Label>Password</Form.Label>
+                                <Form.Label className='form-label'>Password</Form.Label>
                                 <Form.Control type='password' ref={passwordRef} required />
                             </Form.Group>
                             <Form.Group id='password-confirm' className='mt-3'>
-                                <Form.Label>Confirm Password</Form.Label>
+                                <Form.Label className='form-label'>Confirm Password</Form.Label>
                                 <Form.Control type='password' ref={passwordConfirmRef} required />
                             </Form.Group>
                             <Button disabled={loading} type='submit' className='w-100 mt-4  btn-dark'>Sign up</Button>
                         </form>
                     </Card.Body>
-                    <div className="w-100 text-center mt-2 mb-4">
-                        Already Have an account? <Link to="/login" >Log in</Link>
+                    <div className="txt-form w-100 mt-2 mb-4">
+                        Already Have an account? <Link className='linking' to="/login" >Login</Link>
                     </div>
                 </Card>
             </div>

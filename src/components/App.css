@@ -1,11 +1,32 @@
+.form-label,
+.txt-form{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.txt-form{
+  text-align: center;
+}
+
+.linking{
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 600;
+  transition: all 100ms ease-in-out;
+}
+
+.linking:hover{
+  color: #6bd7df;
+}
+
 .comps{
   margin: 0;
   padding: 0;
 }
 
 .login-page{
-  gap: 8.5rem;
-  justify-content: first baseline;
+  gap: 9rem;
+  /* justify-content: baseline; */
   align-items: center;
 }
 
@@ -30,5 +51,12 @@
 .login-form{
   justify-self: center;
   width: 500px ;
-  padding-right: 5rem;
+  padding:0 3rem;
+}
+@media screen and (max-width:1150px) and (min-width:500px){
+  .login-page{
+    gap: 0.5rem;
+    justify-content: first baseline;
+    align-items: center;
+  }
 }
