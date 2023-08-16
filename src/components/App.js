@@ -9,17 +9,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 
+
 function App() {
   return (
     <AuthProvider>
-      <Container className='d-flex align-items-center justify-content-center'
-      style={ {minHeight: "100vh"} }>
+      <div id='comps' style={ {minHeight: "100vh"} }>
       
-      <div className="w-100" style={ {maxWidth: "400px"} }>
+      <div className="w-100 vh-100" >
         <Router>
           <AuthProvider>
               <Routes>
-                <Route exact path="/" element = {<Dashboard/>} />
+                <Route element = {<Dashboard/>} path='/' exact />
                 <Route path="/signup" element = {<Register/>} />
                 <Route path="/login" element = {<Login/>} />
               </Routes>
@@ -28,7 +28,7 @@ function App() {
       </div>
 
         
-      </Container>
+      </div>
       
     </AuthProvider>
     

@@ -1,16 +1,15 @@
-import React from "react"
-import { Route, Redirect } from "react-router-dom"
-import { useAuth } from "../contexts/AuthContext"
+import { Outlet, useLocation, Navigate} from "react-router-dom";
+import { projectAuth } from "firebase/auth";
 
-export default function PrivateRoute({ component: Component, ...rest }) {
-  const { currentUser } = useAuth()
+import React from 'react'
 
-  return (
-    <Route
-      {...rest}
-      render={props => {
-        return currentUser ? <Component {...props} /> : <Redirect to="/login" />
-      }}
-    ></Route>
-  )
+export const PrivateRoute = () => {
+    const location = useLocation();
+    // let auth = { 'token':false};
+    return projectAuth.currentUser ? (
+        <Outlet />
+      ) : (
+        // keep the previous navigation stack
+        <Navigate to="/login" state={{ from: location }} replace />
+      );
 }
