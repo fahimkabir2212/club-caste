@@ -7,6 +7,7 @@ import { AuthProvider } from '../Context/AuthContext';
 import { Container } from 'react-bootstrap';
 import ProtectedRoute from './PrivateRoute'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {ClubdDashboard} from './ClubdDashboard' ;
 
 
 
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/' exact  element = {<ProtectedRoute><Dashboard/></ProtectedRoute>} />
                 <Route path="/signup" element = {<Register/>} />
                 <Route path="/login" element = {<Login/>} />
+                <Route path="/clubdashboard" element = {<ClubdDashboard/>} />
               </Routes>
             </AuthProvider>
         </Router>

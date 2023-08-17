@@ -46,6 +46,7 @@
   height: 100%;
   position: relative;
   z-index: 1;
+  padding: 4.5rem;
 }
 
 .login-form{
@@ -58,5 +59,90 @@
     gap: 0.5rem;
     justify-content: first baseline;
     align-items: center;
+    
   }
 }
+
+/* Dashboard */
+
+.dashboard-page{
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 2fr 6fr 5fr;
+  column-gap:3rem;
+  row-gap: 1rem;
+  padding-right: 3rem;
+}
+.sidebar{
+  grid-row: span 3;
+  background-color: var(--blue-sec);
+}
+
+.searchnav{
+  max-height: 5rem;
+}
+
+.heroheader{
+  background-image: url("../dashboardArtwork.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hero-title{
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-description{
+  color: var(--white);
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
+.featured-club-section{
+  margin-bottom: 1.5rem;
+
+}
+
+.featured-title{
+  font-weight: 700;
+  text-align: left;
+  margin: 1rem 0;
+  margin-bottom: 1.2rem;
+}
+
+.club-card{
+  background-color: var(--blue-sec);
+  max-width: 250px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.card-image{
+  background-color: black;
+  height: 150px;
+  margin-bottom: 0.8rem;
+}
+
+.card-info h3{
+    font-size: 1.5rem;
+}
+.card-info p{
+  font-size: 1rem;
+}
+
+@media screen and (max-width:1150px) and (min-width:500px){
+  .dashboard-page{
+
+    grid-template-columns: 1fr 11fr;
+    column-gap:1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+
