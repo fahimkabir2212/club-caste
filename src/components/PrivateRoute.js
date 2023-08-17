@@ -1,15 +1,15 @@
 import { Outlet, useLocation, Navigate} from "react-router-dom";
-import { projectAuth } from "firebase/auth";
+import { useAuth } from "../Context/AuthContext";
 
-import React from 'react'
+import React, { Children } from 'react'
 
-export const PrivateRoute = () => {
-    const location = useLocation();
-    // let auth = { 'token':false};
-    return projectAuth.currentUser ? (
-        <Outlet />
-      ) : (
-        // keep the previous navigation stack
-        <Navigate to="/login" state={{ from: location }} replace />
-      );
+export default function PrivateRoute({children}) {
+  const {user} = useAuth();
+    if(!user){
+      return <Navigate to = '/login'></Navigate>
+    }
+  return (
+    children 
+  )
 }
+
