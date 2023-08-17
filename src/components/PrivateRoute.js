@@ -4,9 +4,13 @@ import { useAuth } from "../Context/AuthContext";
 import React, { Children } from 'react'
 
 export default function PrivateRoute({children}) {
-  const {user} = useAuth();
-    if(!user){
-      return <Navigate to = '/login'></Navigate>
+  const {currentUser} = useAuth();
+    if(!currentUser){    
+      return(
+        <Navigate to = '/login'></Navigate>
+      )
+    }else{
+      <Navigate to = '/'></Navigate>
     }
   return (
     children 
