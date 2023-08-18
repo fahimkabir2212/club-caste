@@ -11,7 +11,7 @@ const Message = ({message}) => {
   return (
     <>
         <div className={` message ${messageClass}`}>
-            <p className='name'>Fahim</p>
+            {/* <p className='name'>Fahim</p> */}
             <p>{message.text}</p>
         </div>
     </>

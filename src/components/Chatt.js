@@ -23,19 +23,21 @@ const Chatt = () => {
 
   return (
     <>
-    <main className='main-sec'>
-        {/* Chat messeage Comp */}
-        {messages &&
-          messages.map((message) => (
-            <Message key={message.id} message={message} />
-          ))}
-     
-    </main>
+    <div className="chat-panel">
+      <div className='main-sec'>
+          {/* Chat messeage Comp */}
+          {messages &&
+            messages.map((message) => (
+              <Message key={message.id} message={message} />
+            ))}
 
-        {/* Send Message comp */}
-        <SendMessage/>
+      </div>
+      <SendMessage/>
 
-    <span ref={scroll} ></span>
+      
+
+      {/* <span ref={scroll} ></span> */}
+    </div>
     
     </>
   )

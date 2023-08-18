@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {auth, db} from '../firebase'
 import { useAuth } from "../Context/AuthContext";
 import {addDoc, collection, serverTimestamp} from 'firebase/firestore'
-
+import sendIcon from '../icons/send.svg'
 
 
 const SendMessage = ({scroll}) => {
@@ -27,7 +27,8 @@ const SendMessage = ({scroll}) => {
   }
 
   return (
-    <form onSubmit={sendMessage} className='form-sub'>
+    <div className='send-form'>
+      <form onSubmit={sendMessage} className='form-sub'>
       <input
         value={input}
         onChange={(e) => setInput(e.target.value)}
@@ -36,9 +37,10 @@ const SendMessage = ({scroll}) => {
         placeholder='Message'
       />
       <button className='sub-btn' type='submit'>
-        Send
+        <img className='submitIcon' src={sendIcon} alt="React Logo" type='submit' />
       </button>
     </form>
+    </div>
   );
 };
 
