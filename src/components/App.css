@@ -65,14 +65,26 @@
 
 /* Dashboard */
 
+
+.project-dashboard-page,
+.club-dashboard-page,
 .dashboard-page{
   display: grid;
   grid-template-columns: 2fr 10fr;
-  grid-template-rows: 2fr 6fr 5fr;
   column-gap:3rem;
   row-gap: 1rem;
   padding-right: 3rem;
 }
+
+.dashboard-page{
+  grid-template-rows: 2fr 6fr 5fr;
+}
+
+.project-dashboard-page{
+    grid-template-rows: 1fr 11fr;
+}
+
+
 .sidebar{
   grid-row: span 3;
   background-color: var(--blue-sec);
@@ -136,13 +148,34 @@
   font-size: 1rem;
 }
 
+.club-hero{
+  margin-top: 1.5rem;
+}
+
 @media screen and (max-width:1150px) and (min-width:500px){
+  .club-dashboard-page,
   .dashboard-page{
 
     grid-template-columns: 1fr 11fr;
     column-gap:1.5rem;
     padding-right: 1.5rem;
   }
+}
+
+.sec-nav{
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+.sec-nav-link{
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--black);
+  transition: all 100ms ease-in-out;
+}
+.sec-nav-link:hover{
+  color: var(--blue);
 }
 
 

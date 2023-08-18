@@ -8,6 +8,8 @@ import { Container } from 'react-bootstrap';
 import ProtectedRoute from './PrivateRoute'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {ClubdDashboard} from './ClubdDashboard' ;
+import {ProjectDashboard} from './ProjectDashboard' ;
+import {Discussion} from './Discussion' ;
 
 
 
@@ -24,7 +26,9 @@ function App() {
                 <Route path='/' exact  element = {<ProtectedRoute><Dashboard/></ProtectedRoute>} />
                 <Route path="/signup" element = {<Register/>} />
                 <Route path="/login" element = {<Login/>} />
-                <Route path="/clubdashboard" element = {<ClubdDashboard/>} />
+                <Route path="/clubdashboard" element = {<ProtectedRoute><ClubdDashboard/></ProtectedRoute>} />
+                <Route path="/projectdashboard" element = {<ProtectedRoute><ProjectDashboard/></ProtectedRoute>} />
+                <Route path="/discussion" element = {<ProtectedRoute><Discussion/></ProtectedRoute>} />
               </Routes>
             </AuthProvider>
         </Router>
