@@ -7,8 +7,8 @@ export const ProjectNavigation = () => {
   return (
     <>
         <div className="sec-nav">
-            <Link className='sec-nav-link'>Home</Link>
-            <Link className='sec-nav-link'>Tasklist</Link>
+            <Link className='sec-nav-link' to='/projectdashboard'>Home</Link>
+            <Link className='sec-nav-link' to='/tasklist'>Tasklist</Link>
             <Link className='sec-nav-link' to='/discussion' >Discussion</Link>
             <Link className='sec-nav-link'>Notification</Link>
         </div>

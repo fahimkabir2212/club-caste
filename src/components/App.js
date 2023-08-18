@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {ClubdDashboard} from './ClubdDashboard' ;
 import {ProjectDashboard} from './ProjectDashboard' ;
 import {Discussion} from './Discussion' ;
+import {Tasklist} from './Tasklist';
 
 
 
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/clubdashboard" element = {<ProtectedRoute><ClubdDashboard/></ProtectedRoute>} />
                 <Route path="/projectdashboard" element = {<ProtectedRoute><ProjectDashboard/></ProtectedRoute>} />
                 <Route path="/discussion" element = {<ProtectedRoute><Discussion/></ProtectedRoute>} />
+                <Route path="/tasklist" element = {<ProtectedRoute><Tasklist/></ProtectedRoute>} />
               </Routes>
             </AuthProvider>
         </Router>

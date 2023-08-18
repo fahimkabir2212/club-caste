@@ -1,15 +1,14 @@
-import React from 'react';
+import React from 'react'
 import {ProjectNavigation} from './ProjectNavigation' ;
-import Chatt from './Chatt';
 
-export const Discussion = () => {
+export const Tasklist = () => {
   return (
-        <div className="project-dashboard-page vh-100">
+    <div className="project-dashboard-page vh-100">
         <div className='sidebar'>Sidebar</div>
         <ProjectNavigation/>
         <div className='discussion-panel' >
             <section className='chat-main'>
-                <Chatt/>
+                
             </section>
         </div>
 

@@ -178,4 +178,87 @@
   color: var(--blue);
 }
 
+.discussion-panel{
+  max-width: 80vw;
+  background-color: #F0F9FA;
+  border: #00000050 solid 1px;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.chat-main{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin-top: 1rem;
+
+}
+
+.main-sec{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+}
+
+.message{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  margin-right: 3rem;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.164);
+  border-radius: 5px;
+  box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.329) ;
+
+}
+.name{
+  position: absolute;
+  color: #030303;
+  font-size: 1rem;
+  margin-top: -4rem;
+}
+
+.sent{
+  display: flex;
+  justify-content: end;
+  background: #dddddd7e;
+}
+
+.recieved{
+  background: #6bd7df38;
+  display: flex;
+}
+
+/* const style = {
+  form: `h-14 w-full max-w-[728px]  flex text-xl absolute bottom-0`,
+  input: `w-full text-xl p-3 bg-gray-900 text-white outline-none border-none`,
+  button: `w-[20%] bg-green-500`,
+}; */
+
+.form-sub{
+  height: 4rem;
+  width: 100%;
+  max-width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -0;
+  padding: 0 2rem;
+  padding-right: 6rem;
+  margin-bottom: 1rem;
+}
+
+.form-input{
+  width: 100%;
+  padding: 1rem;
+}
+
+.sub-btn{
+  width: 20%;
+
+}
+
 
