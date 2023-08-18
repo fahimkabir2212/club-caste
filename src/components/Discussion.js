@@ -1,5 +1,6 @@
 import React from 'react';
 import {ProjectNavigation} from './ProjectNavigation' ;
+import Chatt from './Chatt';
 
 export const Discussion = () => {
   return (
@@ -7,7 +8,9 @@ export const Discussion = () => {
         <div className='sidebar'>Sidebar</div>
         <ProjectNavigation/>
         <div className='discussion-panel' >
-            Discussion Panel
+            <section className='chat-main'>
+                <Chatt/>
+            </section>
         </div>
 
         </div>
