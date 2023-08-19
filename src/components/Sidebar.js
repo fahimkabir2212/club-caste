@@ -17,11 +17,12 @@ export const Sidebar = () => {
             <h3 className='greeting-user'>Comrade</h3>
         </div>
         <div className='navigation-sidebar'>
-            <Link className='navigation-sidebar-links' rel="stylesheet" href="/dashboard">
+
+            <Link className='navigation-sidebar-links' rel="stylesheet" to="/">
                 <img className='navbar-icon' src={dashboardIcon} alt="Dashboard Icon"/> 
                 <p className='nav-bar-text'>Dashboard</p>
             </Link>
-            <Link className='navigation-sidebar-links' rel="stylesheet" href="/">
+            <Link className='navigation-sidebar-links' rel="stylesheet" to="/">
                 <img className='navbar-icon' src={browseIcon} alt="Dashboard Icon"/> 
                 <p className='nav-bar-text'>Explore Clubs</p> 
             </Link>

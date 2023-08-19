@@ -19,14 +19,14 @@ export const ClubdDashboard = () => {
           </div>
         </div>
         <div className='featured-club-section' >
-            <h2 className='featured-title'>Featured clubs </h2>
+            <h2 className='featured-title'>Recent Projects </h2>
             <div className='community-cards'>
               <div className='club-card'>
                   <div className='card-image'>
                       Image
                   </div>
                   <div className='card-info'>
-                    <h3>Project 1</h3>
+                    <h3>Scientific View</h3>
                     <p>Lorem ipsum dolor sit amet ame, consectetur adipiscing elit</p>
                   </div>
                   <div className="card-nav">

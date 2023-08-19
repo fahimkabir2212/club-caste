@@ -26,14 +26,15 @@ export default function Dashboard() {
                       Image
                   </div>
                   <div className='card-info'>
-                    <h3>Physics Club</h3>
+                    <h3>Atom alliance</h3>
                     <p>Lorem ipsum dolor sit amet ame, consectetur adipiscing elit</p>
                   </div>
                   <div className="card-nav">
-                  <Link className='linking' to="/clubdashboard" >Learn more</Link>
+                  <Link className='linking' to="/clubdashboard" >Visit club</Link>
                   {/* <Button disabled={loading} type='submit' className='w-50 btn-dark'>Visit</Button> */}
                   </div>
               </div>
+              
             </div>
         </div>
         
