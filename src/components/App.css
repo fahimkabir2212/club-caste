@@ -144,8 +144,38 @@
   text-decoration: none;
 }
 
-.searchnav{
+.search-bar{
+  display: flex;
+  justify-content: space-between;
+  max-height: 3rem;
+  margin-top: 2rem;
+  
+}
+
+.search-field{
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 3rem;
+  background-color: var(--blue-sec);
+  width: 65%;
   max-height: 5rem;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 3px;
+  padding-left: 2rem;
+}
+
+.search-input{
+  width: 100%;
+  background-color: var(--blue-sec);
+  border: none;
+}
+.user-icons{
+  display: flex;
+  gap: 2rem;
+}
+.navbar-icon-profile{
+  width: 35px;
 }
 
 .heroheader{

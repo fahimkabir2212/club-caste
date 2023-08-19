@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react'
 import { Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import {Sidebar} from './Sidebar' ;
+import {SearchBox} from './SearchBox' ;
 import './App.css';
 
 export default function Dashboard() {
@@ -10,7 +11,7 @@ export default function Dashboard() {
     <>
       <div className="dashboard-page vh-100">
         <Sidebar/>
-        <div className="searchnav">Seach Navigation</div>
+        <SearchBox/>
         <div className='heroheader'>
           <div className="overlay">
               <h2 className='hero-title'>Discover existing clubs or create your own</h2>
