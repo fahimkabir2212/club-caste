@@ -39,7 +39,7 @@
   flex-shrink: 1;
 }
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.692);
   top: 0;
   left: 0;
   width: 100%;
@@ -59,7 +59,9 @@
     gap: 0.5rem;
     justify-content: first baseline;
     align-items: center;
-    
+  }
+  .abc{
+    display: none;
   }
 }
 
@@ -504,15 +506,38 @@
 
 .task-board{
   grid-row: span 2;
+  padding: 1rem;
   
 }
 
+.card-image-project,
 .schedule-board{
-
+  background-image: url("../projectBanner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .board-heading{
   font-weight: 600;
   margin-top: 1rem;
 }
+
+.pro-heading{
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.board-paragraph{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+
+
+
+
+
 

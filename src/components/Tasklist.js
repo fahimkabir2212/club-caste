@@ -8,7 +8,7 @@ export const Tasklist = () => {
     <div className="project-dashboard-page vh-100">
         <Sidebar/>
         <ProjectNavigation/>
-        <TaskPanel className='task-panel'/>
+        <TaskPanel/>
         </div>
   )
 }

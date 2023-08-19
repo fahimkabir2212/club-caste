@@ -53,7 +53,7 @@ const TaskPanel = () => {
    };
   return (
     <>
-        <div  >
+        <div className='task-panel' >
             <div className='task-heading'>
               <h3>Assigned tasks</h3>
               <button className='create-task-btn'> Create new task </button>
