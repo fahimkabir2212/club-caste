@@ -194,6 +194,7 @@
 
 } */
 
+
 .chat-panel{
   display: grid;
   gap: 1rem;
@@ -253,7 +254,7 @@
 
 .form-input{
   border-radius: 12px;
-  width: 95%;
+  width: 100%;
   padding: 1rem;
   border: #6bd7df solid 1px;
 }
@@ -273,4 +274,133 @@
   color: #6bd7df;
 }
 
+
+.task-panel{
+  background-color: var(--blue-sec);
+  height: 85vh;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.329) ;
+  
+}
+
+.task-heading{
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-heading h3{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.create-task-btn{
+  border: none;
+  background-color: #05050500;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.create-task-btn:hover{
+  text-decoration: underline;
+}
+
+.task-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 0.8rem;
+  margin: 1rem 2rem;
+}
+
+.task-name-inp,
+.task-deadline-inp{
+    border-radius: 5px;
+    height: 2rem;
+}
+
+.task-description-inp{
+  border-radius: 5px;
+  grid-column: span 2;
+  height: 4rem;
+}
+
+.todo-list{
+  margin: 1rem 2rem;
+  list-style: none;
+  
+}
+
+.single-task{
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.single-task-inc{
+  /* background-color: rgba(247, 246, 246, 0.507); */
+}
+
+.task-name{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.task-name input{
+  width: 15px;
+  height: 15px;
+}
+
+.task-name h4{
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.task-desc{
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+
+.task-deadline{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.deadline-date{
+  font-weight: 500;
+  margin: 0;
+}
+
+.task-edit,
+.task-delete{
+  font-weight: 500;
+  color: red;
+  border: none;
+  background-color: #6bd7df00;
+ 
+  text-transform: uppercase;
+}
+.task-edit{
+  color: blue;
+}
+
+.task-edit:hover,
+.task-delete:hover{
+  text-decoration: underline;
+}
+
+.edit-delete{
+ display: flex;
+ gap: 1rem;
+}
+
+.completedtext{
+  text-decoration: line-through;
+}
+
+.incompletedtext{
+  text-decoration: none;
+}
 
