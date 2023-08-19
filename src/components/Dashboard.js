@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react'
 import { Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import {Sidebar} from './Sidebar' ;
 import './App.css';
 
 export default function Dashboard() {
@@ -8,7 +9,7 @@ export default function Dashboard() {
   return (
     <>
       <div className="dashboard-page vh-100">
-        <div className='sidebar'>Sidebar</div>
+        <Sidebar/>
         <div className="searchnav">Seach Navigation</div>
         <div className='heroheader'>
           <div className="overlay">

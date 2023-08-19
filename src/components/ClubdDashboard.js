@@ -2,6 +2,8 @@ import React, {useRef, useState} from 'react'
 import { Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import './App.css';
+import {Sidebar} from './Sidebar' ;
+
 
 
 export const ClubdDashboard = () => {
@@ -9,7 +11,7 @@ export const ClubdDashboard = () => {
   return (
       <>
       <div className="club-dashboard-page vh-100">
-        <div className='sidebar'>Sidebar</div>
+        <Sidebar/>
         <div className='club-hero heroheader'>
           <div className="overlay">
               <h2 className='hero-title'>Discover existing clubs or create your own</h2>

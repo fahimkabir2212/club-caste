@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {ProjectNavigation} from './ProjectNavigation' ;
 import {Todo} from './Todo' ;
+import {Sidebar} from './Sidebar' ;
 
 import {db} from '../firebase';
 import {query, collection, onSnapshot, updateDoc, doc, addDoc, deleteDoc} from 'firebase/firestore';
@@ -56,7 +57,7 @@ export const Tasklist = () => {
 
   return (
     <div className="project-dashboard-page vh-100">
-        <div className='sidebar'>Sidebar</div>
+        <Sidebar/>
         <ProjectNavigation/>
         <div className='task-panel' >
             <div className='task-heading'>
