@@ -517,6 +517,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.schedule-board{
+  overflow: hidden;
+}
 
 .board-heading{
   font-weight: 600;
