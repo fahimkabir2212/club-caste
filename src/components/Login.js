@@ -58,6 +58,14 @@ async function handleSubmit(e){
                     <div className="txt-form w-100 mt-2 mb-4">
                         Don't an account? <Link className='linking' to="/signup" >Sign up</Link>
                     </div>
+                    
+                </Card>
+                <Card className='mt-4 p-3'>
+                <div>
+                    <h2 className='mb-2'>Demo Creds</h2>
+                    <p className='mb-0'><strong>Email:</strong> fahimkabir@test.com</p>
+                    <p ><strong>Password:</strong> fahimkabir</p>
+                </div>
                 </Card>
             </div>
         </div>
